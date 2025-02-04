@@ -1,0 +1,23 @@
+.adduser{
+    display: flex;
+    width: 100%;
+
+    .adduserContainer{
+        flex: 6;
+    }
+    .formContainer {
+        padding: 10px; // Add padding
+        background-color: #d4d0d0; // Set background color
+        border-radius: 8px; // Add border radius
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 500%; // Add shadow
+      }
+      
+      .formItem {
+        margin-bottom: 20px; // Add margin bottom to form items
+      }
+      
+      .submitButton {
+        margin-top: 20px; // Add margin top to submit button
+      }
+}

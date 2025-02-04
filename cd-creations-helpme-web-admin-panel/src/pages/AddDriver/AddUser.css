@@ -1,0 +1,71 @@
+
+.main-cont1 {
+    height: 100vh;
+    width: calc(100%);
+    display: flex;              /* Added this line */
+    flex-direction: column;     /* Added this line */
+    align-items: center;        /* Added this line */
+    position: relative;         /* Added this line to ensure ::before works correctly */
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.main-cont1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-image: url("https://assets.sonary.com/wp-content/uploads/2021/04/20120920/How-to-Use-your-POS-System-to-Increase-Revenue.jpg");*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #EEEEEE;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.main-cont1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group .form-check-inline {
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group button {
+    width: 48%;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

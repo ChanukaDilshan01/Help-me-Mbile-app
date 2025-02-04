@@ -1,0 +1,79 @@
+
+
+.main-cont1 {
+    height: 100vh;
+    width: calc(100%);
+    display: flex;              /* Added this line */
+    flex-direction: column;     /* Added this line */
+    align-items: center;        /* Added this line */
+    position: relative;         /* Added this line to ensure ::before works correctly */
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.main-cont1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+//background-image: url("https://assets.sonary.com/wp-content/uploads/2021/04/20120920/How-to-Use-your-POS-System-to-Increase-Revenue.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #EEEEEE;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.table-container{
+    width: 80%;
+    background-color: rgb(214, 230, 245);
+    padding: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the double borders */
+    background-color: white;
+}
+
+.table-container thead {
+    background-color: #6439ff; /* Green background */
+    color: white; /* White text */
+}
+
+.table-container th {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-container tbody tr:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.table-container td {
+    padding: 10px 15px; /* Padding for the body cells */
+    border: 1px solid #ddd; /* Add a border */
+}
+
+.table-container td:nth-child(4),
+.table-container td:nth-child(5),
+.table-container td:nth-child(1)
+{
+    text-align: center;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+}
+
+.listContainer{
+    flex: 6;
+}
+

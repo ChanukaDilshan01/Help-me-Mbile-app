@@ -1,0 +1,143 @@
+.main-cont1 {
+    height: 100vh;
+    width: calc(100%);
+    display: flex;              /* Added this line */
+    flex-direction: column;     /* Added this line */
+    align-items: center;        /* Added this line */
+    position: relative;         /* Added this line to ensure ::before works correctly */
+  }
+  
+  h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .main-cont1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //background-image: url("https://assets.sonary.com/wp-content/uploads/2021/04/20120920/How-to-Use-your-POS-System-to-Increase-Revenue.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #EEEEEE;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+.list{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.listContainer{
+    flex: 6;
+}
+
+.dropdown-container {
+    display: inline-block; /* Display the dropdown containers in a line */
+    margin-right: 10px; /* Add margin between dropdown containers */
+}
+
+.dropdown {
+    width: 200px; /* Set a fixed width for the dropdowns */
+    padding: 8px; /* Add padding to the dropdowns */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    cursor: pointer; /* Set cursor style */
+}
+
+.dropdown option {
+    font-size: 16px; /* Set font size for dropdown options */
+}
+
+/* Style for the button */
+.delivery_btn {
+    padding: 8px 16px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Set cursor style */
+    margin-top: 20px;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 400px; /* Set minimum width as needed */
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+
+h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1; /* Adjust the width equally among tabs */
+    padding: 10px;
+    border: 2px solid #007bff; /* Blue border for all tabs */
+    border-radius: 5px;
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    width: 150px;
+    transition: all 0.3s ease;
+    text-align: center; /* Center align text */
+}
+
+.tab + .tab {
+    margin-left: 10px; /* Adjust the gap between tabs as needed */
+}
+
+.tab:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+.active {
+    background-color: #007bff; /* Blue background for active tab */
+    color: white; /* White text for active tab */
+}
+
+  
+  

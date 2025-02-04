@@ -1,0 +1,52 @@
+.Orders {
+    display: flex;
+    width: 100%;
+  
+    .OrderContainer {
+      flex: 6;
+      
+      .firstcontainerdetails {
+        display: flex;
+        flex-direction: column;
+  
+        // Adjust spacing between each detail
+        p {
+          margin-bottom: 0; // Adjust as needed
+        }
+      }
+
+
+      // orders.scss
+
+// Adjust width and margin for the form items
+.secondcontainerdetails {
+    .ant-form-item {
+      margin-bottom: 16px;
+  
+      // Customize label style
+      .ant-form-item-label {
+        width: 120px; // Adjust label width as needed
+        text-align: right; // Align label text to the right
+      }
+
+      .ant-form-item-label {
+        width: 120px; // Adjust label width as needed
+        text-align: right; // Align label text to the right
+      }
+  
+      // Adjust input and input number width
+      .ant-input,
+      .ant-input-number {
+        width: 200px; // Adjust input width as needed
+      }
+    }
+  
+    // Add margin between form items
+    .ant-form-item + .ant-form-item {
+      margin-top: 8px; // Adjust margin between form items as needed
+    }
+  }
+  
+    }
+  }
+  
